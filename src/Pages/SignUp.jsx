@@ -26,11 +26,11 @@ const SignUp = () => {
     formData.set("password", password);
 
     try {
-      // await axios.post("http://localhost:5001/register", formData, {
-      //   onUploadProgress: (progressEvent) => {
-      //     console.log(progressEvent);
-      //   },
-      // });
+      await axios.post("http://localhost:5001/register", formData, {
+        onUploadProgress: (progressEvent) => {
+          console.log(progressEvent);
+        },
+      });
 
       // Show success alert
       Swal.fire({

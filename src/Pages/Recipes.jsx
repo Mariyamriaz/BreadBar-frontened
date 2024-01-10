@@ -57,19 +57,19 @@ const Recipes = () => {
       <div className="text-[30px] flex justify-center">
         𝓑𝓻𝓮𝓪𝓭𝓫𝓪𝓻
       </div>
-      <nav className="flex gap-5 justify-between bg-orange-300 h-[60px] items-center shadow-md text-shadow-md font-serif sticky top-0 z-10">
-        <div className="flex gap-5">
+      <nav className="flex gap-5 justify-between bg-orange-300 h-[60px] items-center shadow-md text-shadow-md font-serif sticky top-0 z-10 ">
+        <div className="flex gap-5 my-4">
           <Link to="/">Home</Link>
           <Link to="/aboutus">AboutUs</Link>
           <Link to="/reviews">Reviews</Link>
         </div>
-        <Link to="/login">login</Link>
+        <Link to="/login">login</Link> 
       </nav>
       <div className="container mt-8 mx-auto min-h-screen my-5">
         <h1 className="text-3xl font-bold mb-4">Bread Recipes</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {recipes.map((recipe) => (
-            <div key={recipe.id} className="bg-orange-200 p-6 rounded-lg shadow-md">
+            <div key={recipe.id} className="bg-orange-200 p-6 rounded-lg shadow-md scale-100 hover:scale-105 transition-all">
               <h3 className="text-xl font-bold mb-2">{recipe.name}</h3>
               <img src={recipe.imageUrl} alt={recipe.name} className="w-full h-40 object-cover mb-4" />
               <p className="text-green-600 font-bold mb-2">Ingredients:</p>
